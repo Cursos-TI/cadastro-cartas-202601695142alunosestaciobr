@@ -120,10 +120,21 @@ int main(){
     printf("PIB per Capita: %.2f reais\n", pib_percapita_2);
     printf("SUPER PODER: %.2f\n\n", super_poder_cart2);
 
-    printf("**Super Trunfo - Cidades Brasileiras**\n\n");
+    /*Trecho do código para comparação das cartas com estrutura de decisão*/
 
-    printf("Vencedor Carta1: %i\n", comparacao_cartas);
-    printf("Vencedor Carta2: %i\n\n", comparacao_cartas_2);
+    printf("**Super Trunfo - Cidades Brasileiras**\n\n");
+    printf("Carta 1 - %s : População: %lu\n", cidade, populacao);
+    printf("Carta 2 - %s : População: %lu\n", cidade_2, populacao_2);
+
+    if(populacao > populacao_2){
+
+        printf("Resultado: Carta 1 ( %s ) venceu!\n", cidade);
+
+    } else{
+
+        printf("Resultado: Carta 2 ( %s ) venceu!\n", cidade_2);
+
+    }
 
     return 0;
 }
